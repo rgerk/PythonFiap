@@ -1,0 +1,15 @@
+nomepct = input('Insira seu nome? ')
+idadepct = int(input('Qual a sua idade? '))
+riscopct = input('Tem bronquite? ou asma? ').upper()
+
+
+if riscopct != "SIM" and riscopct != "NAO":
+    print('Informe apenas sim ou não')
+    exit()  
+
+if idadepct >=60 or idadepct < 15:
+    print(nomepct.title() + " Voce está na fila prioritaria")
+elif riscopct == "SIM":
+    print(nomepct.title() + " Voce está na fila prioritaria devido ao Grupo de risco")
+else:
+    print(nomepct.title() + " Voce está na fila comum")    
