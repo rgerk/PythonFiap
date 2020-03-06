@@ -3,5 +3,9 @@ nota2 = int( input("Digite a nota 2: "))
 
 media = (nota1 + nota2) / 2
 
-print("Sua média é:\t", media)
-print("Sua média é:\t" + str(media))
+if media >= 6:
+    print("VOCE FOI APROVADO: " + "MEDIA: ", media)
+elif media < 4:
+    print("VOCE ESTA EM REPROVADO:" + "MEDIA: ", media)
+else:
+    print("VOCE ESTA EM RECUPERACAO: " + "MEDIA: ", media)   
